@@ -66,14 +66,16 @@
     
 }
 
-@media (max-width:700px) {
+@media (max-width:600px) {
     .pickup{
+        &__item{
+            font-size: 10px;
+        }
+        &__box{
+            height: 200px;
+        }
         &__card{
-            display: flex;
-            gap: 2px;
-            .pickup__title{
-                font-size: 16px;
-            }
+            display: none;
         }
     }
 }
