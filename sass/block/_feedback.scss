@@ -1,0 +1,72 @@
+.feedback{
+    margin-top: 50px;
+    &__content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    &__text{
+        font-size: 16px;
+        font-weight: 600;
+        color: $bg-py;
+    }
+    &__title{
+        font-size: 48px;
+        font-weight: 700;
+    }
+    &__icon{
+        display: flex;
+        flex-direction: row;
+        width: 70px;
+        height: 70px;
+        .left{
+            width: 70px;
+            height: 70px;
+            &:hover{
+                border-radius: 50%;
+
+                border: 1px solid grey;
+            }
+        }
+        .right{
+            width: 70px;
+            height: 70px;
+            &:hover{
+                border-radius: 50%;
+                
+                border: 1px solid grey;
+            }
+            
+        }
+    }
+    &__wrapper{
+        overflow: auto;
+        display: flex;
+        gap: 30px;
+    }
+    &__card img{
+        width: 330px;
+        height: 327px;
+    }
+
+}
+
+@media (max-width:700px) {
+    .feedback{
+        &__title{
+            font-size: 30px;
+        }
+        .left{
+            width: 30px;
+            height: 30px;
+        }
+        .right{
+            width: 30px;
+            height: 30px;
+            
+        }
+    }
+    
+}
+
+

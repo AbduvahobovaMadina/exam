@@ -1,0 +1,54 @@
+.rent{
+    margin-top: 60px;
+    &__wrapper{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    &__content{
+        width: 50%;
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    &__img{
+        width: 40%;
+    }
+    &__btn{
+        width: 255px;
+        height: 48px;
+        border: 2px solid rgba(230, 232, 236, 1);
+        border-radius: 50px;
+        &:hover{
+            border: 1px solid rgba(201, 199, 199, 0.958);
+            box-shadow: 0 0 10px grey;
+        }
+    }
+    &__btn input{
+        border: none;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    &__btn button{
+        width: 30px;
+        text-align: center;
+        color: white;
+        height: 30px;
+        border-radius: 50%;
+        border: none;
+        background: dodgerblue;
+        &:hover{
+            box-shadow: 0 5px 10px darkblue;
+        }
+    }
+}
+
+@media (max-width:700px) {
+    .rent{
+        &__wrapper{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

@@ -1,0 +1,87 @@
+.london{
+    margin-top: 50px;
+    &__content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    &__text{
+        font-size: 16px;
+        font-weight: 600;
+        color: $bg-py;
+    }
+    &__title{
+        font-size: 48px;
+        font-weight: 700;
+    }
+    &__icon{
+        display: flex;
+        flex-direction: row;
+        width: 70px;
+        height: 70px;
+        .left{
+            width: 70px;
+            height: 70px;
+            &:hover{
+                border-radius: 50%;
+
+                border: 1px solid grey;
+            }
+        }
+        .right{
+            width: 70px;
+            height: 70px;
+            &:hover{
+                border-radius: 50%;
+                
+                border: 1px solid grey;
+            }
+            
+        }
+    }
+    &__wrapper{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+    }
+    &__card {
+        margin-bottom: 20px;
+        width: 330px;
+    }
+    button{
+        width: 300px;
+        height: 60px;
+        color: black;
+        border-radius: 30px;
+        border: 2px $bg-py;
+        &:hover{
+            background-color: $bg-py;
+            color: #fff;
+
+        }
+    }
+}
+
+@media (max-width:700px) {
+    .london{
+        &__title{
+            font-size: 30px;
+        }
+        .left{
+            width: 30px;
+            height: 30px;
+        }
+        .right{
+            width: 30px;
+            height: 30px;
+            
+        }
+        &__wrapper{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    
+}
